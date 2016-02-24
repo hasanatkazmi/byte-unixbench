@@ -35,12 +35,12 @@ char SCCSid[] = "@(#) @(#)arith.c:3.3 -- 5/15/91 19:30:19";
 
 int dumb_stuff(int);
 
-unsigned long iter;
+unsigned long long iter;
 
 /* this function is called when the alarm expires */
 void report()
 {
-	fprintf(stderr,"COUNT|%ld|1|lps\n", iter);
+	fprintf(stderr,"COUNT|%lld|1|lps\n", iter);
 	exit(0);
 }
 
